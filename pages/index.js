@@ -22,7 +22,9 @@ const CAFE = [
 ];
 
 const MainPage = () => {
-  return <MeetupList meetups={CAFE} />;
+  return (
+      <MeetupList meetups={CAFE} />
+  );
 };
 
 export default MainPage;
