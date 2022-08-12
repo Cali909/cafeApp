@@ -39,15 +39,24 @@ export const CAFE = [
   },
 ];
 
-const MainPage = () => {
+const MainPage = (props) => {
   return (
     <Fragment>
       <Head>
         <title>React Cafe</title>
       </Head>
-      <MeetupList meetups={CAFE} />
+      <MeetupList meetups={props.meetups} />
     </Fragment>
   );
 };
+
+export async function getStaticProps() {
+  //fetch data
+  return {
+    props: {
+      meetups: CAFE,
+    },
+  };
+}
 
 export default MainPage;
