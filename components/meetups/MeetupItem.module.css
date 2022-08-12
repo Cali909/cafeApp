@@ -1,5 +1,5 @@
 .item {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .image {
@@ -8,11 +8,14 @@
   overflow: hidden;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  position: relative;
 }
 
 .image img {
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  bottom: 0px;
 }
 
 .content {
@@ -43,4 +46,11 @@
 .actions button:hover,
 .actions button:active {
   background-color: #ffe2ed;
+}
+
+@media screen and (min-width: 700px) {
+  .image img {
+    width: 130%;
+    object-fit: cover;
+  }
 }

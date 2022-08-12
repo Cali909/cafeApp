@@ -1,10 +1,21 @@
 import NewMeetupForm from "./../../components/meetups/NewMeetupForm";
+import Head from "next/head";
+import { Fragment } from "react";
 
 const NewMeetupPage = () => {
   const handleAddMeetup = (data) => {
-    console.log(data.address);
+    console.log(data);
+    //send data to an API
   };
-  return <NewMeetupForm onAddMeetup={handleAddMeetup} />;
+
+  return (
+    <Fragment>
+      <Head>
+        <title>Add New Meetup</title>
+      </Head>
+      <NewMeetupForm onAddMeetup={handleAddMeetup} />
+    </Fragment>
+  );
 };
 
 export default NewMeetupPage;

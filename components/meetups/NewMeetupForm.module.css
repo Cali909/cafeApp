@@ -44,3 +44,8 @@
   background-color: #a50e48;
   border-color: #a50e48;
 }
+
+.error {
+  color: rgb(191, 9, 9);
+  margin-top: 0.25rem;
+}

@@ -4,11 +4,13 @@ import classes from "./MainNavigation.module.css";
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>React Cafe</div>
+      <Link href="/">
+        <div className={classes.logo}>React Cafe</div>
+      </Link>
       <nav>
         <ul>
           <li>
-            <Link href="/">All Meetups</Link>
+            <Link href="/">All Cafes</Link>
           </li>
           <li>
             <Link href="/new-meetup">Add New Cafe</Link>

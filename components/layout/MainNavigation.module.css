@@ -9,9 +9,10 @@
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header ul {
@@ -23,17 +24,33 @@
 }
 
 .header li {
-  margin-left: 3rem;
+  margin-left: 4rem;
+  transition: all 0.3s;
+}
+
+.header li:hover {
+  transform: scale(1.25);
 }
 
 .header a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #fcb8d2;
+  transition: all 0.3s;
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
   color: white;
+}
+
+@media screen and (min-width: 750px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .header a {
+    font-size: 1.5rem;
+  }
 }
