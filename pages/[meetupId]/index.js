@@ -4,11 +4,11 @@ import classes from "../../components/meetups/MeetupDetail.module.css";
 import { CAFE } from "../index";
 import Head from "next/head";
 
-const MeetupDetails = () => {
+const MeetupDetails = (props) => {
   const router = useRouter();
   const cafeId = router.query;
   const id = cafeId.meetupId;
-  const wantedCafe = CAFE.find((cafe) => cafe.id === id);
+  const wantedCafe = props.allCafes.find((cafe) => cafe.id === id);
   console.log(wantedCafe);
   return (
     <Fragment>
@@ -28,5 +28,26 @@ const MeetupDetails = () => {
     </Fragment>
   );
 };
+
+export async function getStaticPaths() {
+  return {
+    fallback: false,
+    paths: [
+      { params: { meetupId: "c1" } },
+      { params: { meetupId: "c2" } },
+      { params: { meetupId: "c3" } },
+      { params: { meetupId: "c4" } },
+    ],
+  };
+}
+
+export async function getStaticProps() {
+  //fetch data
+  return {
+    props: {
+      allCafes: CAFE,
+    },
+  };
+}
 
 export default MeetupDetails;
