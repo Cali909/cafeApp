@@ -25,7 +25,7 @@ export const CAFE = [
     id: "c3",
     title: "Third Cafe",
     image:
-      "https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/24115640/Untitled-design-2022-02-18T123717.280.jpg",
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     address: "Tehran",
     description: "Cafe 3",
   },
