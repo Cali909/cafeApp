@@ -24,5 +24,5 @@ Cafe Details
 Add new Cafe (input and overall form validation)
 
 
-* URLs change accordingly. There is a not-found page on wrong URLs.
-*To run the project type "npm run dev" in the terminal in the project directory.
+- URLs change accordingly. There is a not-found page on wrong URLs.
+- To run the project type "npm run dev" in the terminal in the project directory.
